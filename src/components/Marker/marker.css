@@ -1,0 +1,44 @@
+.marker {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(117, 224, 187);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.marker.marker--hover {
+  box-shadow: 0 0 20px rgb(120, 120, 0);
+}
+.marker[data-enabled="false"] {
+  background-color: rgb(204, 204, 204);
+  cursor: not-allowed;
+}
+
+.mapboxgl-popup-content {
+  font-family: "Segoe UI", sans-serif;
+  padding: 0;
+}
+
+
+.mapboxgl-popup-content h3 {
+  background: green;
+  color: #fff;
+  margin: -10px;
+  margin-bottom: 0;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+.mapboxgl-popup-content h4 {
+  margin: 0;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+.mapboxgl-popup-close-button {
+  display: none;
+}

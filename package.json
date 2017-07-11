@@ -1,0 +1,47 @@
+{
+  "name": "test-veeroute",
+  "version": "1.0.0",
+  "description": "Test for apply to VeeRoute company",
+  "main": "index.js",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "dragula": "^3.7.2",
+    "jets": "^0.14.0",
+    "mapbox-gl": "^0.38.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.2.0",
+    "eslint-plugin-smells": "^1.0.1",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1",
+    "write-file-webpack-plugin": "^4.1.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "prod": "cross-env NODE_ENV=production webpack -p --progress",
+    "lint": "eslint ./src/**/*.js",
+    "preprod": "npm run lint",
+    "server": "node server.js",
+    "postprod": "npm run server"
+  },
+  "keywords": [
+    "Veeroute"
+  ],
+  "author": "alexander.rusak@gmail.com",
+  "license": "ISC"
+}

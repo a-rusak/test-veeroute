@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+
+    "max-statements": ["warn", 15],
+    "max-depth": ["warn", 2],
+    "complexity": ["warn", 7],
+    "max-params": ["warn", 2],
+
+    "smells/no-switch": 1,
+    "smells/no-complex-switch-case": 1,
+    "smells/no-setinterval": 1,
+    "smells/no-this-assign": 1,
+    "smells/no-complex-string-concat": 1
+  },
+  "plugins": ["smells"],
+  "globals": {
+    "PROD": true
+  }
+}

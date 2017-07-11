@@ -1,0 +1,126 @@
+.regions-panel,
+.regions-selected-panel {
+  height: 100%;
+  padding: 10px;
+  overflow: auto;
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 1px solid #ccc;
+}
+
+.regions,
+.regions-selected {
+  flex-grow: 1;
+  overflow: auto;
+}
+.regions .item,
+.regions-selected .item {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.regions .title,
+.regions-selected .title {
+  display: block;
+  color: #00853e;
+  font-weight: 700;
+}
+
+.regions .item.active,
+.regions-selected .item.active {
+  background-color: #ccc;
+}
+
+.regions .item.item--hover,
+.regions-selected .item.item--hover {
+  background-color: rgb(120, 120, 0);
+}
+
+.regions-panel__controls,
+.regions-selected-panel__controls {
+  display: flex;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.regions-sort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22px;
+  height: 21px;
+  padding: 0 3px;
+}
+.regions-sort span {
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  margin: 2px 0;
+  background-color: #000;
+}
+.regions-sort::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background-color: #000;
+}
+.regions-sort::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background-color: #000;
+}
+.regions-sort.asc::before {
+  width: 5px;
+}
+.regions-sort.asc::after {
+  width: 11px;
+}
+.regions-sort.desc::before {
+  width: 11px;
+}
+.regions-sort.desc::after {
+  width: 5px;
+}
+
+.list-item {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.list-item-title {
+  margin: 0;
+}
+.list-item.list-item--active {
+  background-color: #888;
+}
+.list-item.list-item--hover {
+  background-color: #ccc;
+}
+
+.panel-empty-message {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #aaa;
+  display: none;
+  text-align: center;
+}
+
+.list-item-features,
+.popup-features {
+  font-size: 2em;
+}
+
+.regions-selected-panel__controls label {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
